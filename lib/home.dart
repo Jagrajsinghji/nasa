@@ -1,6 +1,12 @@
 import 'dart:ui' as prefix0;
 
 import 'package:flutter/material.dart';
+import 'package:nasa/EndlessSpace/endLessSpace.dart';
+import 'package:nasa/Rocket/RocketHome.dart';
+
+import 'Wild Fire/wildFire.dart';
+import 'disaster/disaster_home.dart';
+import 'gallery/galleryUI.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -75,7 +81,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: InkWell(
-                        onTap: () {},
+                        onTap: () {Navigator.of(context).push(MaterialPageRoute(builder: (c)=>RocketHome()));},
                         child: Container(width: 250.0,height: 50,
                             decoration: BoxDecoration(
                                 color: Color.fromRGBO(11, 61, 145, 1.0),
@@ -92,7 +98,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: InkWell(
-                        onTap: () {},
+                        onTap: () {Navigator.of(context).push(MaterialPageRoute(builder: (c)=>DisasterHome()));},
                         child: Container(width: 250.0,height: 50,
                             decoration: BoxDecoration(
                                 color: Color.fromRGBO(11, 61, 145, 1.0),
@@ -112,7 +118,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: InkWell(
-                        onTap: () {},
+                        onTap: () {Navigator.of(context).push(MaterialPageRoute(builder: (c)=>wildFire()));},
                         child: Container(width: 250.0,height: 50,
                             decoration: BoxDecoration(
                                 color: Color.fromRGBO(11, 61, 145, 1.0),
@@ -127,27 +133,27 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                       ),
                     ),
 
+//                    Padding(
+//                      padding: const EdgeInsets.all(8.0),
+//                      child: InkWell(
+//                        onTap: () {},
+//                        child: Container(width: 250.0,height: 50,
+//                            decoration: BoxDecoration(
+//                                color: Color.fromRGBO(11, 61, 145, 1.0),
+//                                borderRadius: BorderRadius.circular(20.0)),
+//                            child: Center(
+//                              child: Text(
+//                                "Cryosphere",
+//                                style:
+//                                TextStyle(color: Colors.white, fontSize: 18.0),
+//                              ),
+//                            )),
+//                      ),
+//                    ),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: InkWell(
-                        onTap: () {},
-                        child: Container(width: 250.0,height: 50,
-                            decoration: BoxDecoration(
-                                color: Color.fromRGBO(11, 61, 145, 1.0),
-                                borderRadius: BorderRadius.circular(20.0)),
-                            child: Center(
-                              child: Text(
-                                "Cryosphere",
-                                style:
-                                TextStyle(color: Colors.white, fontSize: 18.0),
-                              ),
-                            )),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: InkWell(
-                        onTap: () {},
+                        onTap: () {Navigator.of(context).push(MaterialPageRoute(builder: (c)=>Menu()));},
                         child: Container(width: 250.0,height: 50,
                             decoration: BoxDecoration(
                                 color: Color.fromRGBO(11, 61, 145, 1.0),
@@ -164,7 +170,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: InkWell(
-                        onTap: () {},
+                        onTap: () {Navigator.of(context).push(MaterialPageRoute(builder: (c)=>Gallery()));},
                         child: Container(width: 250.0,height: 50,
                             decoration: BoxDecoration(
                                 color: Color.fromRGBO(11, 61, 145, 1.0),
